@@ -12,24 +12,14 @@ public class MeterArchive extends Client {
         objectList.add(meter);
 
 
-        for(Meter m : objectList){
-            System.out.println("PINT LIST" + m.getRegNr());
-        }
-        System.out.println("-------------------------");
     }
 /*Ønsker å hente et meter. Dersom meter ikke
 eksisterer vil den returnere null
  */
     public Meter getMeter(String regNr) {
         for (Meter m : objectList) {
-            System.out.println("REG nr: " + m.getRegNr());
-            System.out.println("SAmenlikn: " + regNr);
-            System.out.println(m.getRegNr().equals(regNr));
-
 
             if (m.getRegNr().equals(regNr)) {
-                System.out.println("SUCSESS! " + m.toString());
-
                 return m;
             }
         }
@@ -51,8 +41,8 @@ eksisterer vil den returnere null
 
             if (m.getRegNr().equals(regNr)) {
                 objectList.remove(m);
+                return;
             }
-
         }
     }
     //returnerer alle meterne

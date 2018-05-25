@@ -1,10 +1,11 @@
 public class Clock extends Meter {
 
-    double minClock;
+    private double minClock;
 
 
     public Clock(String regNr, boolean meterCondition, String locationCode, double minClock){
         super( regNr, meterCondition,locationCode);
+        this.minClock = minClock;
 
     }
 

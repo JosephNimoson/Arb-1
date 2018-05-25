@@ -20,11 +20,11 @@ public class Meter extends MeterArchive {
     }
 
     public void setLocationCode(String locationCode){
-        Meter.regNr = regNr;
+        this.regNr = regNr;
     }
 
     public void setRegNr(String regNr) {
-        Meter.regNr = regNr;
+        this.regNr = regNr;
     }
 
     public boolean isMeterCondition() {

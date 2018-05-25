@@ -14,6 +14,12 @@ public class Client {
         meterArkiv.addMeter(new Weight("WT105",true,"ROM105",20,70));
 
         System.out.println(meterArkiv.getMeter("CL100"));
+        System.out.println(meterArkiv.getMeter("TM101"));
+        System.out.println(meterArkiv.getMeter("WT102"));
+
+        meterArkiv.removeMeter("TM101");
+
+        meterArkiv.getAllMeters();
 
 
 

@@ -1,9 +1,11 @@
 public class Weight extends Meter {
-    double minWeight;
-    double maxWeight;
+    private double minWeight;
+    private double maxWeight;
 
     public Weight(String regNr, boolean meterCondition, String locationCode, double minWeight, double maxWeight){
         super( regNr, meterCondition,locationCode);
+        this.minWeight= minWeight;
+        this.maxWeight= maxWeight;
 
     }
 

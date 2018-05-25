@@ -1,9 +1,11 @@
 public class Thermometer extends Meter {
-    Double minTemp;
-    Double maxTemp;
+    private Double minTemp;
+    private Double maxTemp;
 
     public Thermometer(String regNr, boolean meterCondition, String locationCode,double minTemp,double maxTemp){
         super( regNr, meterCondition,locationCode);
+        this.maxTemp = maxTemp;
+        this.minTemp = minTemp;
 
     }
 
